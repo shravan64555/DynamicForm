@@ -1,0 +1,110 @@
+/* For each section in form */
+.Section {
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+}
+/* form title */
+.formHeading {
+  text-align: center;
+  color: aqua;
+}
+/* Radio button */
+.Radio {
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+  height: 30px;
+}
+.RadioButton {
+  display: flex;
+}
+.RadioTitle {
+  min-width: 300px;
+  max-width: 300px;
+  color: gray;
+  font-weight: bolder;
+}
+.RadioCheckBox {
+  margin: 10px;
+}
+/*Radio button customization start */
+input[type="radio"] {
+  appearance: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 15px;
+  height: 15px;
+  content: none;
+  outline: none;
+  margin: 0px 20px 0px 5px;
+}
+
+input[type="radio"]:checked {
+  appearance: none;
+  outline: none;
+  padding: 0;
+  content: none;
+  border: none;
+  margin: 0px 20px 0px 5px;
+}
+
+input[type="radio"]:checked::before {
+  position: absolute;
+  color: black !important;
+  content: "\00A0\2713\00A0" !important;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-weight: bolder;
+  font-size: 13px;
+  width: 15px;
+  height: 15px;
+}
+
+/* Radio Button customization end */
+
+/* for text input fields */
+.textInput {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 150px;
+}
+
+.Input {
+  display: flex;
+  margin-left: 36px;
+  align-items: center;
+  height: 35px;
+  min-width: 300px;
+  justify-content: space-between;
+}
+.FormText input {
+  border-radius: 10px;
+  border: 2px solid gray;
+  width: 100px;
+  height: 20px;
+}
+.FormLabel label {
+  color: gray;
+  font-weight: bold;
+}
+/*submit button*/
+button {
+  height: 35px;
+  color: white;
+  width: 150px;
+  border-radius: 12px;
+  border: 2px solid black;
+  background-color: rgb(6, 66, 90);
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 5px 45%;
+  font-size: large;
+}
+
+/*Notes */
+.textArea textarea {
+  height: 60px;
+  width: 800px;
+  margin-left: 80px;
+}
