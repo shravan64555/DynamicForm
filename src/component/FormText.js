@@ -1,15 +1,12 @@
-import React from 'react'
+import React from 'react';
+import {FormInput, FormLabel,FormInputBox,Section} from './FormUi-components';
 
 function FormText(props) {
   return (
-    <div className="Input">
-      <div className="FormLabel">
-        <label for="input">{props.name}</label>
-      </div>
-      <div className="FormText">
-        <input type="text" id="input" onChange={props.handler} name={props.name} />
-      </div>
-    </div>
+    <FormInput >
+        <FormLabel>{props.name}</FormLabel>
+      <FormInputBox type="input" name={props.name} onChange={props.handler} />
+    </FormInput>
   )
 }
 

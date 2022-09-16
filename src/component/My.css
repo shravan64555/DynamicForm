@@ -4,15 +4,20 @@
   margin-left: 50px;
   align-items: center;
 }
+.Section h2{
+  min-width: 150px;
+  max-width: 150px;
+}
 /* form title */
 .formHeading {
   text-align: center;
   color: aqua;
+  height:20px;
 }
 /* Radio button */
 .Radio {
   display: flex;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   align-items: center;
   height: 30px;
 }
@@ -66,13 +71,13 @@ input[type="radio"]:checked::before {
 /* for text input fields */
 .textInput {
   display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 150px;
+  grid-template-columns: 25% 25%;
+  column-gap: 200px;
 }
 
 .Input {
   display: flex;
-  margin-left: 36px;
+  /* margin-left: 36px; */
   align-items: center;
   height: 35px;
   min-width: 300px;
@@ -106,5 +111,5 @@ button {
 .textArea textarea {
   height: 60px;
   width: 800px;
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
